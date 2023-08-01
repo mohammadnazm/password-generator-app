@@ -23,6 +23,14 @@ function App() {
             <label htmlFor="capital">Capital</label>
             <input type="checkbox" id="capital" />
           </div>
+          <div className="field">
+            <label htmlFor="small">Small</label>
+            <input type="checkbox" id="small" />
+          </div>
+          <div className="field">
+            <label htmlFor="number">Number</label>
+            <input type="checkbox" id="number" />
+          </div>
         </form>
       </div>
     </section>
