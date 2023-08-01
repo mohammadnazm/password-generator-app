@@ -14,7 +14,7 @@ The Password Generator App creates strong and randomized passwords for your onli
 
 ## Installation
 
-1. `git clone https://github.com/mohammadnazm//password-generator-app.git`
+1. `git clone https://github.com/mohammadnazm/password-generator-app.git`
 
 2. `cd /password-generator-app`
 
