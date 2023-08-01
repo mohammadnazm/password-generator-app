@@ -2,6 +2,7 @@
 import React, { useState } from "react"
 import { FaClipboard } from "react-icons/fa"
 import { useForm } from "./useForm"
+import { getSpecialChar, getRandomChar } from "./utils"
 
 function App() {
   const [values, setValues] = useForm({
@@ -26,6 +27,10 @@ function App() {
     {
       field: values.number,
       getChar: getRandomChar(48, 57),
+    },
+    {
+      field: values.symbol,
+      getChar: getSpecialChar(48, 57),
     },
   ]
 
