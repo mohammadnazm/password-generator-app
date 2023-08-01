@@ -18,19 +18,19 @@ function App() {
   const fieldsArray = [
     {
       field: values.capital,
-      getChar: getRandomChar(65, 90),
+      getChar: () => getRandomChar(65, 90),
     },
     {
       field: values.small,
-      getChar: getRandomChar(97, 122),
+      getChar: () => getRandomChar(97, 122),
     },
     {
       field: values.number,
-      getChar: getRandomChar(48, 57),
+      getChar: () => getRandomChar(48, 57),
     },
     {
       field: values.symbol,
-      getChar: getSpecialChar(48, 57),
+      getChar: () => getSpecialChar(48, 57),
     },
   ]
 
