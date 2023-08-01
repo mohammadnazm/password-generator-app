@@ -41,7 +41,7 @@ function App() {
 
     for (let i = 0; i < values.length; i++) {
       const index = Math.floor(Math.random() * checkedFields.length)
-      const letter = checkedFields[index].getChar
+      const letter = checkedFields[index].getChar()
 
       if (letter) {
         generatedPassword += letter
