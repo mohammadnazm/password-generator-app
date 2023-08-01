@@ -58,6 +58,8 @@ function App() {
     if (result) {
       await navigator.clipboard.writeText(result)
       toast.success("Copied to your clipboard")
+    } else {
+      toast.error("No Password to copy")
     }
   }
 
