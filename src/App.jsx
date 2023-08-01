@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { FaClipboard } from "react-icons/fa"
 import { useForm } from "./useForm"
 import { getSpecialChar, getRandomChar } from "./utils"
+import toast from "react-hot-toast"
 
 function App() {
   const [values, setValues] = useForm({
@@ -50,6 +51,13 @@ function App() {
 
     if (generatedPassword) {
       setResult(generatedPassword)
+    }
+  }
+
+  const handleClipboard = async () => {
+    if (result) {
+      await navigator.clipboard.writeText(result)
+      toast.success("Copied to your clipboard")
     }
   }
 
