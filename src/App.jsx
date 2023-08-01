@@ -73,7 +73,7 @@ function App() {
               readOnly
               value={result}
             />
-            <div className="clipboard">
+            <div className="clipboard" onClick={handleClipboard}>
               <FaClipboard></FaClipboard>
             </div>
           </div>
