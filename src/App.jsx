@@ -8,6 +8,7 @@ function App() {
         <form id="pg-form">
           <div className="result">
             <input type="text" id="result" placeholder="Min 6 Char" readOnly />
+            <div className="clipboard"></div>
           </div>
         </form>
       </div>
