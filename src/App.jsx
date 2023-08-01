@@ -13,6 +13,12 @@ function App() {
               <FaClipboard></FaClipboard>
             </div>
           </div>
+          <div>
+            <div className="field">
+              <label htmlFor="length">Length</label>
+              <input type="number" id="length" min={6} />
+            </div>
+          </div>
         </form>
       </div>
     </section>
