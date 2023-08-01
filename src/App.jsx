@@ -14,6 +14,21 @@ function App() {
 
   const [result, setResult] = useState()
 
+  const fieldsArray = [
+    {
+      field: values.capital,
+      getChar: getRandomChar(65, 90),
+    },
+    {
+      field: values.small,
+      getChar: getRandomChar(97, 122),
+    },
+    {
+      field: values.number,
+      getChar: getRandomChar(48, 57),
+    },
+  ]
+
   return (
     <section>
       <div className="container">
