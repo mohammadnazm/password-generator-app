@@ -6,5 +6,5 @@ export function getRandomChar(min, max) {
 export function getSpecialChar() {
   const specialChar = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
-  return specialChar(Math.floor(Math.random * specialChar.length))
+  return getRandomChar(Math.floor(Math.random * specialChar.length))
 }
