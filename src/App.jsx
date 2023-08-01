@@ -19,6 +19,10 @@ function App() {
               <input type="number" id="length" min={6} max={10} />
             </div>
           </div>
+          <div className="field">
+            <label htmlFor="capital">Capital</label>
+            <input type="checkbox" id="capital" />
+          </div>
         </form>
       </div>
     </section>
