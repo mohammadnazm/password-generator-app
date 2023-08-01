@@ -30,8 +30,8 @@ function App() {
                 id="length"
                 min={6}
                 max={10}
-                name={length}
-                value={values.length}
+                name="length"
+                checked={values.length}
                 onChange={setValues}
               />
             </div>
@@ -42,7 +42,7 @@ function App() {
               type="checkbox"
               id="capital"
               name="capital"
-              value={values.capital}
+              checked={values.capital}
               onChange={setValues}
             />
           </div>
@@ -52,7 +52,7 @@ function App() {
               type="checkbox"
               id="small"
               name="small"
-              value={values.small}
+              checked={values.small}
               onChange={setValues}
             />
           </div>
@@ -62,7 +62,7 @@ function App() {
               type="checkbox"
               id="number"
               name="number"
-              value={values.number}
+              checked={values.number}
             />
           </div>
           <div className="field">
