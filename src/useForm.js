@@ -8,7 +8,8 @@ export function useForm(initialValues) {
     e => {
       setValues({
         ...values,
-        [e.target.name]: [],
+        [e.target.name]:
+          e.target.type === "checkbox" ? e.target.checked : e.target.value,
       })
     },
   ]
