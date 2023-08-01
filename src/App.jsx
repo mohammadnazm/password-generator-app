@@ -2,7 +2,17 @@
 import React from "react"
 
 function App() {
-  return <section></section>
+  return (
+    <section>
+      <div className="container">
+        <form id="pg-form">
+          <div className="result">
+            <input type="text" id="result" placeholder="Min 6 Char" readOnly />
+          </div>
+        </form>
+      </div>
+    </section>
+  )
 }
 
 export default App
