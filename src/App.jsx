@@ -40,7 +40,18 @@ function App() {
     const checkedFields = fieldsArray.filter(({ field }) => field)
 
     for (let i = 0; i < values.length; i++) {
-      const index = Math.floor(Math.random() * checkedFields)
+      const index = Math.floor(Math.random() * checkedFields.length)
+      const letter = checkedFields[index].getChar()
+
+      if (letter) {
+        generatedPassword += letter
+      }
+    }
+    if (generatedPassword) {
+      setResult(generatedPassword)
+    }
+    if (generatedPassword) {
+      setResult(generatedPassword)
     }
   }
 
