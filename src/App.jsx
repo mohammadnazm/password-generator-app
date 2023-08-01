@@ -25,7 +25,14 @@ function App() {
           <div>
             <div className="field">
               <label htmlFor="length">Length</label>
-              <input type="number" id="length" min={6} max={10} />
+              <input
+                type="number"
+                id="length"
+                min={6}
+                max={10}
+                name={length}
+                value={values}
+              />
             </div>
           </div>
           <div className="field">
