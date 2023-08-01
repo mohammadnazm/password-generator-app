@@ -51,6 +51,8 @@ function App() {
 
     if (generatedPassword) {
       setResult(generatedPassword)
+    } else {
+      toast.error("Please select at least one option")
     }
   }
 
