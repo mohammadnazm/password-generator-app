@@ -8,8 +8,8 @@ function App() {
     length: 6,
     capital: true,
     small: true,
-    number: true,
-    symbol: true,
+    number: false,
+    symbol: false,
   })
 
   return (
@@ -63,6 +63,7 @@ function App() {
               id="number"
               name="number"
               checked={values.number}
+              onChange={setValues}
             />
           </div>
           <div className="field">
@@ -71,7 +72,7 @@ function App() {
               type="checkbox"
               id="symbol"
               name="symbol"
-              values={values.symbol}
+              checked={values.symbol}
               onChange={setValues}
             />
           </div>
