@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react"
+import React, { useState } from "react"
 import { FaClipboard } from "react-icons/fa"
 import { useForm } from "./useForm"
 
@@ -12,12 +12,20 @@ function App() {
     symbol: false,
   })
 
+  const [result, setResult] = useState()
+
   return (
     <section>
       <div className="container">
         <form id="pg-form">
           <div className="result">
-            <input type="text" id="result" placeholder="Min 6 Char" readOnly />
+            <input
+              type="text"
+              id="result"
+              placeholder="Min 6 Char"
+              readOnly
+              value={result}
+            />
             <div className="clipboard">
               <FaClipboard></FaClipboard>
             </div>
