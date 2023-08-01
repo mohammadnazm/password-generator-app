@@ -1,8 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react"
 import { FaClipboard } from "react-icons/fa"
+import { useForm } from "./useForm"
 
 function App() {
+  const [values, setValues] = useForm({
+    length: 6,
+    capital: true,
+    small: true,
+    number: true,
+    symbol: true,
+  })
+
   return (
     <section>
       <div className="container">
