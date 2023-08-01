@@ -31,6 +31,10 @@ function App() {
             <label htmlFor="number">Number</label>
             <input type="checkbox" id="number" />
           </div>
+          <div className="field">
+            <label htmlFor="symbol">Symbol</label>
+            <input type="checkbox" id="symbol" />
+          </div>
         </form>
       </div>
     </section>
