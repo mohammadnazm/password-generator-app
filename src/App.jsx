@@ -34,10 +34,20 @@ function App() {
     },
   ]
 
+  const handleOnSubmit = e => {
+    e.preventDefault()
+    let generatedPassword = ""
+    const checkedFields = fieldsArray.filter(({ field }) => field)
+
+    for (let i = 0; i < values.length; i++) {
+      const index = Math.floor(Math.random() * checkedFields)
+    }
+  }
+
   return (
     <section>
       <div className="container">
-        <form id="pg-form">
+        <form id="pg-form" onSubmit={handleOnSubmit}>
           <div className="result">
             <input
               type="text"
