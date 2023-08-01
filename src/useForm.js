@@ -8,7 +8,7 @@ export function useForm(initialValues) {
     e => {
       setValues({
         ...values,
-        [e.target.value]: [],
+        [e.target.name]: [],
       })
     },
   ]
