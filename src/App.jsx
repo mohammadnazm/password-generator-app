@@ -35,6 +35,7 @@ function App() {
             <label htmlFor="symbol">Symbol</label>
             <input type="checkbox" id="symbol" />
           </div>
+          <button type="submit">Generate Password</button>
         </form>
       </div>
     </section>
