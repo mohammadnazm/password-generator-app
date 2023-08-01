@@ -31,25 +31,49 @@ function App() {
                 min={6}
                 max={10}
                 name={length}
-                value={values}
+                value={values.length}
+                onChange={setValues}
               />
             </div>
           </div>
           <div className="field">
             <label htmlFor="capital">Capital</label>
-            <input type="checkbox" id="capital" />
+            <input
+              type="checkbox"
+              id="capital"
+              name="capital"
+              value={values.capital}
+              onChange={setValues}
+            />
           </div>
           <div className="field">
             <label htmlFor="small">Small</label>
-            <input type="checkbox" id="small" />
+            <input
+              type="checkbox"
+              id="small"
+              name="small"
+              value={values.small}
+              onChange={setValues}
+            />
           </div>
           <div className="field">
             <label htmlFor="number">Number</label>
-            <input type="checkbox" id="number" />
+            <input
+              type="checkbox"
+              id="number"
+              name="number"
+              value={values.number}
+            />
           </div>
           <div className="field">
             <label htmlFor="symbol">Symbol</label>
-            <input type="checkbox" id="symbol" />
+            <input
+              type="checkbox"
+              id="symbol"
+              name="symbol"
+              values={values.symbol}
+              onChange={setValues}
+            />
           </div>
           <button type="submit">Generate Password</button>
         </form>
